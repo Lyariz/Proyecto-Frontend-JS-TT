@@ -1,0 +1,285 @@
+/* GENERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+} 
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(circle, rgba(238, 174, 202, 0.87) 0%, rgba(148, 187, 233, 0.53) 100%);
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+/* HEADER */
+
+.header{
+    border: none;
+    background-color: #EEAECA;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: auto;
+    height: 100px;
+    display: flex;
+    
+    padding: 1rem;
+    margin-left: 2rem;
+}
+
+.header-nav{
+    display: flex;
+    padding: 1rem;
+    margin-right: 2rem;
+ }
+
+.header-nav ul{;
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.header-nav li{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header-nav a{
+    text-decoration: none;
+    color: #411900a3;
+    display: inline-block;
+    padding: 1rem;
+}
+
+p{ 
+    font-size: 2rem;
+    border: none;
+}   
+
+
+
+
+
+/* HOME */
+
+main{
+    width: 90%;
+    flex: 1;
+
+    margin: 2rem auto 6rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-home{
+    font-size: 4rem;
+    margin: 2rem 0;
+    color: #411900a3;
+    text-align: center;
+}
+
+main .parrafo-home{
+    border: none;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    color: #411900a3;
+    width: 70%;
+}
+
+main .productos-home{
+    width: 100%;
+}
+
+main .productos-home h2{
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 3rem;
+    color: #411900a3;
+}
+
+main .contenedor-productos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+main .tarjeta-producto{
+    background-color: #EEAECA; 
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 25rem;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tarjeta-producto img{
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tarjeta-producto h3{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #411900a3;
+}
+
+.tarjeta-producto p{
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #411900a3;
+}
+
+
+
+
+/* CONTACTO */
+
+.titulo-contacto{
+    font-size: 4rem;
+    margin: 2rem 0;
+    color: #411900a3;
+    text-align: center;
+}
+
+.contacto{
+    width: 90%;
+    flex: 1;
+
+    margin: 2rem auto 6rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario-contacto{
+    background-color: #EEAECA; 
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 90%;
+    max-width:50rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formulario-contacto label{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #411900a3;
+    align-self: flex-start;
+}
+
+.formulario-contacto input, .formulario-contacto textarea{
+    width: 100%;
+    resize: vertical;
+    padding: 0.8rem 1rem; 
+    box-sizing: border-box;
+    margin: 1rem auto 1.5rem auto;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.formulario-contacto button{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+
+    background-color: #411900a3;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+
+
+
+/* FOOTER */
+
+.footer{
+    background-color: #87BFFF;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1.5rem 2rem;
+    flex-wrap: wrap;
+}
+
+.footer p{
+    border: none;
+    font-size: 1.5rem;
+    display: flex;
+    padding: 1rem;
+    margin:0;
+}
+
+.footer-nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav li{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer-nav a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+
+
+
+
+/* MEDIA QUERY */
+
+@media (max-width: 768px) {
+    .header,
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-nav ul,
+    .footer-nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
