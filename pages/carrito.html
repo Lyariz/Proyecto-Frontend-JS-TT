@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> 
+<html lang="en">    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <title>Carrito</title>
     <link rel="stylesheet" href="../css/style.css">
-    <title>Contacto</title>
 </head>
 <body>
-    <header class="header">
+      <header class="header">
   <a href="../index.html"> 
    <img src="../imagenes/logo.png" alt="Logo de la página" class="logo" >
   </a>
@@ -17,40 +17,25 @@
       <li><a href="../index.html">Inicio</a></li>
       <li><a href="../pages/contacto.html">Contacto</a></li>
       <li>
-        <a href="../pages/carrito.html" class="carrito-icono">
+        <a href="./carrito.html" class="carrito-icono">
           🛒 <span id="contador-carrito">0</span>
         </a>
       </li>
     </ul>
    </nav>
   </header>
-      <main>
-        <h1 class="titulo-seccion">Contacto</h1>
 
-        <section class="contacto"> 
-        
-        <form class="formulario-contacto" action="https://formspree.io/f/xeorgvrn" method="post" target="_blank" autocomplete="on">
-          <div>
-          <label for="nombre">Nombre:</label> 
-            <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
-          </div>
+  <main>
+    <h1 class="titulo-seccion">Carrito de Compras</h1>
+    <section id="contenedor-carrito">
+    </section>
+    <div class="acciones-carrito" id="acciones-carrito">
+    </div>
+    <section id="resumen-carrito">
+    </section>
+  </main>
 
-          <div>
-          <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required placeholder="Escribe tu email">  
-          </div> 
-
-          <div>
-          <label for="mensaje">Mensaje:</label> 
-              <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje"></textarea>
-          </div>
-
-            <button type="submit">Enviar</button>
-        </form>
-
-        </section>
-      </main>
-       <footer class="footer">
+   <footer class="footer">
         <p>© 2024 CandyShop. Todos los derechos reservados.</p>
         <p>Contacto: +54 9 11 1234 5678 | email: info@candyshop.com | Dirección: Av. Dulce 123, CABA, Argentina</p>
       <nav class="footer-nav">
@@ -60,5 +45,6 @@
       </ul>
       </nav>
       </footer>
+      <script src="../js/carrito.js" type="module"></script>
 </body>
 </html>

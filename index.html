@@ -16,6 +16,11 @@
     <ul>
       <li><a href="index.html">Inicio</a></li>
       <li><a href="./pages/contacto.html">Contacto</a></li>
+      <li>
+        <a href="./pages/carrito.html" class="carrito-icono">
+          🛒 <span id="contador-carrito">0  </span>
+        </a>
+      </li>
     </ul>
    </nav>
   </header>
@@ -27,23 +32,26 @@
     <section class="productos-home">
       <h2>PRODUCTOS DESTACADOS</h2>
 
-      <div class="contenedor-productos">
+      <div id="contenedor-productos" class="contenedor-productos">
         <article class="tarjeta-producto">
           <img src="./imagenes/producto1.jpg" alt="Bombones de chocolate" width="200" height="200">
           <h3>Bombones de Chocolate Rubí Rosa</h3>
           <p>$20.000</p>
+          <button class="btn">Agregar al carrito</button>
         </article>
         
         <article class="tarjeta-producto">
           <img src="./imagenes/producto2.jpg" alt="PCaja de gomitas" width="200" height="200">
           <h3>Caja Grande de Gomitas 9 divisiones</h3>
           <p>$22.000</p>
+          <button class="btn">Agregar al carrito</button>
         </article>
 
         <article class="tarjeta-producto"> 
           <img src="./imagenes/producto3.jpg" alt="Caja de macarons" width="200" height="200">
           <h3>Caja de Macarons a elección (9/u)</h3>
           <p>$29.500</p>
+          <button class="btn">Agregar al carrito</button>
         </article>
 
       </div>  
@@ -59,5 +67,6 @@
     </ul>
     </nav>
   </footer>
+  <script src="./js/index.js" type="module"> </script>
 </body>
 </html>

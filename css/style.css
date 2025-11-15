@@ -135,6 +135,18 @@ main .tarjeta-producto{
     gap: 1rem;
 }
 
+.btn {
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+
+    background-color: #411900a3;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
 .tarjeta-producto img{
     width: 100%;
     border-radius: 1rem;
@@ -160,7 +172,7 @@ main .tarjeta-producto{
 
 /* CONTACTO */
 
-.titulo-contacto{
+.titulo-seccion{
     font-size: 4rem;
     margin: 2rem 0;
     color: #411900a3;
