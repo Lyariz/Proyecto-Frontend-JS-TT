@@ -1,4 +1,4 @@
-import { guardarCarrito, obtenerCarrito, vaciarCarrito } from "./storage.js";
+import { guardarCarrito, obtenerCarrito, vaciarCarritoStorage } from "./storage.js";
 import { actualizarContador, mostrarMensaje } from "./ui.js";
 
 export const agregarAlCarrito = (producto) => {
@@ -11,18 +11,17 @@ export const agregarAlCarrito = (producto) => {
     mostrarMensaje("Producto agregado");
 };
 
-export const eliminarProducto = (id) => {
+export const eliminarProducto = (indice) => {
     const carrito = obtenerCarrito();
-    carrito.splice(id, 1);
+    carrito.splice(indice, 1);
 
     guardarCarrito(carrito);
-
     actualizarContador(carrito);
     mostrarMensaje("Producto eliminado");
 };
 
-export const vaciarCarritoUI = () => {
-    vaciarCarrito();
+export const vaciarCarrito = () => {
+    vaciarCarritoStorage();
     actualizarContador([]);
     mostrarMensaje("Carrito vaciado");
 };

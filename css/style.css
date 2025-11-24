@@ -146,6 +146,20 @@ main .tarjeta-producto{
     border-radius: 0.5rem;
     cursor: pointer;
 }
+.btn-eliminar-carrito {
+    background-color: #FF6B6B;
+    color: white;
+}
+.btn-eliminar-carrito:hover {
+    background-color: #D64545;
+}
+.btn-vaciar-carrito {
+    background-color: #F7BB2B;
+    color: white;
+}
+.btn-vaciar-carrito:hover {
+    background-color: #D9A322;
+}
 
 .tarjeta-producto img{
     width: 100%;
@@ -277,6 +291,23 @@ main .tarjeta-producto{
 }
 
 
+/* CARRITO */
+.mensaje-carrito-vacio {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #411900a3;
+    text-align: center;
+    margin-top: 3rem;
+    background-color: #EEAECA;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.acciones-carrito {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
 
 
 /* MEDIA QUERY */

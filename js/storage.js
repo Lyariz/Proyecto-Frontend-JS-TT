@@ -8,7 +8,7 @@ export const obtenerCarrito = () => {
     return JSON.parse(localStorage.getItem(KEY)) || []
 }
 
-export const vaciarCarrito = () => {
+export const vaciarCarritoStorage = () => {
     localStorage.removeItem(KEY)
 }
 
